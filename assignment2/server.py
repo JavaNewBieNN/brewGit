@@ -15,17 +15,17 @@ def log_message(message):
     log_file.flush()  # 立即将内容写入文件
 
 
-sk = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # 创建套接字（IPV4，TCP）
+sk = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # 创建套接字(IPV4,TCP)
 sk.bind(('localhost', 5000))  # 绑定到localhost和端口5000
 log_message("successful bind")  # 写入日志并打印
 
-sk.listen()  # 使服务器进入监听模式，等待客户端的连接请求。
+sk.listen()  # 使服务器进入监听模式,等待客户端的连接请求.
 log_message("Server is listening, waiting for connection...")
 
 
 # 处理消息广播
 def broadcast(message, current_client):
-    # 遍历所有客户端，将消息发送给除了当前客户端以外的其他客户端
+    # 遍历所有客户端,将消息发送给除了当前客户端以外的其他客户端
     for client in clients:
         if client != current_client:
             try:
@@ -41,7 +41,7 @@ def remove(client):
         clients.remove(client)
 
 
-# 处理每个客户端的通信逻辑，放入线程中
+# 处理每个客户端的通信逻辑,放入线程中
 def handle_client(conn, addr):
     log_message(f"A new client has connected from {addr}")
     clients.append(conn)  # 将新连接的客户端添加到列表中
@@ -50,7 +50,7 @@ def handle_client(conn, addr):
         try:
             msg = conn.recv(1024)
             if not msg:
-                break  # 如果没有收到消息，表示客户端断开连接
+                break  # 如果没有收到消息,表示客户端断开连接
             decoded_msg = msg.decode("utf-8")
             log_message(f"Received from {addr}: {decoded_msg}")
 
@@ -65,7 +65,7 @@ def handle_client(conn, addr):
             break
 
     log_message(f"Client {addr} has disconnected.")
-    remove(conn)  # 客户端断开时，将其从列表中移除
+    remove(conn)  # 客户端断开时,将其从列表中移除
     conn.close()  # 关闭连接
     log_message(f"Connection with {addr} closed.")
 
@@ -73,9 +73,9 @@ def handle_client(conn, addr):
 # 循环接受多个客户端的连接
 while True:
     conn, addr = sk.accept()  # 等待客户端连接
-    # 每当有新的客户端连接时，创建一个新的线程来处理该客户端的通信
+    # 每当有新的客户端连接时,创建一个新的线程来处理该客户端的通信
     client_thread = threading.Thread(target=handle_client, args=(conn, addr))
-    client_thread.start()  # 启动线程，处理客户端请求
+    client_thread.start()  # 启动线程,处理客户端请求
 
 # 关闭日志文件
 log_file.close()

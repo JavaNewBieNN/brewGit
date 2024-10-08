@@ -4,12 +4,12 @@ import threading
 # output file path
 output_file = "output.txt"
 
-# 创建 output.txt 文件，并写入 HawkID 和姓名
+# 创建 output.txt 文件,并写入 HawkID 和姓名
 with open(output_file, "w") as f:
     f.write("HawkID: nnie\n")
     f.write("Name: Ning Nie\n\n")
 
-# 现在可以继续添加 log_message 函数，将日志追加写入文件
+# 现在可以继续添加 log_message 函数,将日志追加写入文件
 def log_message(message):
     """将消息写入日志文件并打印到控制台"""
     print(message)  # 打印到控制台
@@ -44,7 +44,7 @@ receive_thread.start()
 while True:
     message = input("You: ")
 
-    # 当输入 '/quit' 时，客户端断开连接并优雅退出
+    # 当输入 '/quit' 时,客户端断开连接并优雅退出
     if message == "/quit":
         client_socket.send(message.encode('utf-8'))  # 向服务器发送退出命令
         log_message("You have disconnected from the server")
