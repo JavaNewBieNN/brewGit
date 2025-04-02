@@ -1,7 +1,7 @@
 import socket
 
 sk = socket.socket()
-sk.connect(('127.0.0.1', 5000))  # 三次握手发生的地方，和server的accept方法建立链接
+sk.connect(('127.0.0.1', 5000))  # 三次握手发生的地方,和server的accept方法建立链接
 
 while True:
     inp = input(">>>")
