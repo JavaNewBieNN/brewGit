@@ -9,12 +9,17 @@
 列表    list    []
 元组    tuple   ()
 字符串  string   ""
-集合    set     {}
+集合    set     set()     {e1,e2,e3,e4...}
+字典    dict    {}
 """
 
 #定义一个集合  {}
 my_set = {"itcast", "itheima", "hello world", "python","itcast", "itheima", "hello world", "python","黑马情侣"}
 print(f"my_set的内容是:{my_set},类型是{type(my_set)}")#{'hello world', 'itcast', 'python', 'itheima'},类型是<class 'set'> 自动去重
+
+#空集合这样定义会被认为是空的字典
+my_set = {}
+print(f"my_set类型是:{type(my_set)}") # my_set类型是:<class 'dict'>
 
 #定义空集合
 my_set_empty = set()

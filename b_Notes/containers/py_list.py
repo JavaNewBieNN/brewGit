@@ -166,9 +166,17 @@ print(f"itcast有{count}个")
 count = len(mylist)
 print(f"列表的元素数量总共有:{count}个")
 
+# 11 列表的升序
+my_list = [2,4,6,8,9,11,3,1,4,5,10]
+my_list.sort()
+print(my_list)
 
+# 12  列表的降序
+my_list.sort(reverse=True)
+print(my_list)
 
-
+# 13. 列表的反转
+my_list.reverse()
 
 
 

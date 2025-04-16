@@ -7,7 +7,15 @@ for i in range(5):  # 相当于 for (int i = 0; i < 5; i++)
 for i in range(10, 0, -1):  # 从10递减到1 
     print(i)
 
-
+# 求1-100的偶数和
+sum = 0 
+for j in range(1,101):
+    
+    if j % 2 == 0:
+        sum = sum + j
+    
+    
+    
 """
 Java 写法	                            Python 等价写法	                   说明
 for (int i = 0; i < 5; i++)	           for i in range(5):	             从 0 到 4,共 5 个
