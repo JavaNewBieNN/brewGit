@@ -1,0 +1,34 @@
+[
+    {
+        "name": "keer",
+        "age": 18,
+        "Male": true,
+        "hobits": [
+            "听歌",
+            "游戏",
+            "购物",
+            "吃饭",
+            "打豆豆"
+        ],
+        "address": {
+            "country": "us",
+            "city": "la"
+        }
+    },
+    {
+        "name": "ning",
+        "age": 18,
+        "Male": true,
+        "hobits": [
+            "听歌",
+            "游戏",
+            "购物",
+            "吃饭",
+            "打豆豆"
+        ],
+        "address": {
+            "country": "us",
+            "city": "la"
+        }
+    }
+]
