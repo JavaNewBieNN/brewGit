@@ -15,7 +15,7 @@ with open() as f:
 
     info_list = json.load(f)
     for info in info_list:
-        info.get("name"),info.get("age"),info.get("adress").get("city")
+        info.get("name"),info.get("age"),info.get("address").get("city")
 
 
     pass

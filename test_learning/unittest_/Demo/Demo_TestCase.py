@@ -1,5 +1,6 @@
 """
 代码的目的：学习 TestCase 模块的书写方法
+所有test case必须写在测试类中，并且以test_开头
 """
 #1.导包
 import unittest

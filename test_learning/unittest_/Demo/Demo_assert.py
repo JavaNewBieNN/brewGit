@@ -2,14 +2,14 @@
 断言 assert： 让程序代替人工自动的判断预期结果和实际结果是否相符
 
 断言的结果有两种:
-> True, test case 通过
-> False, test case 失败
+> True, unit_tests case 通过
+> False, unit_tests case 失败
 --------------------------------------------
 常用的UnitTest断言方法
 
 self.assertEqual(expected_value, actual_value)
 
-assertIn(expected_value, actual_value) #判断预期结果是否包含在实际结果中，包含通过，不包含，test case fail throw  exception
+assertIn(expected_value, actual_value) #判断预期结果是否包含在实际结果中，包含通过，不包含，unit_tests case fail throw  exception
 
 assertIn('admin','admin')
 assertIn('admin','adminnn')
@@ -36,7 +36,7 @@ pip list #查看到 parameterized
 
 新建一个 python 代码文件 导包验证
 from pa... import pa...
-
+--------------------------
 
 
 """

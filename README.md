@@ -44,8 +44,10 @@ pythonCodes/<br>
         cd pythonCodes
 
 - ### Create and activate virtual environment（创建并激活虚拟环境）
-        python -m venv venv
-        source venv/Scripts/activate   # Git Bash 下的激活方式     
+        python -m venv .venv
+        $ source .venv/Scripts/activate # Git Bash 下的激活方式     
+        deactivate
+
 
 - ### Install dependencies（安装依赖）
         pip install -r requirements.txt   

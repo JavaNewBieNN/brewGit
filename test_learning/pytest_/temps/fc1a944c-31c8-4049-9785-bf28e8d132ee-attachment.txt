@@ -1,0 +1,2 @@
+WARNING  pytest_result_log:plugin.py:122 --------------Start: unit_tests/test_allure.py::test_charge_power---------------
+WARNING  pytest_result_log:plugin.py:128 ---------------End: unit_tests/test_allure.py::test_charge_power----------------

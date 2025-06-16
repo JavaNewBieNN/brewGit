@@ -2,7 +2,7 @@
 Fixture 测试夹具，是一种代码结构
 在某些特定的情况下 会自动执行
 
-method级别： 在每个测试方法（test case）执行前后都会自动调用的结构
+method级别： 在每个测试方法（unit_tests case）执行前后都会自动调用的结构
             方法执行之前
         def setup(self):
             #每个测试方法执行之前都会执行
@@ -134,7 +134,7 @@ runner.run(suite)
 
 | Fixture 级别   | 方法                                              | 说明                          |
 | ----------    | -----------------------------------------------   | ------------------- 
-| 方法级         | `setUp()` / `tearDown()`                          | 每个 test\_xxx 方法前后执行     
+| 方法级         | `setUp()` / `tearDown()`                          | 每个 unit_tests\_xxx 方法前后执行     
 | 类级           | `@classmethod setUpClass()` / `tearDownClass()`   | 整个类的所有测试前后只执行一次     
 | 模块级         | `setUpModule()` / `tearDownModule()`              | 整个 py 文件的测试前后只执行一次  
 

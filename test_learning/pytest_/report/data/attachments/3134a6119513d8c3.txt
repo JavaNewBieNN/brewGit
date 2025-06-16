@@ -1,0 +1,2 @@
+WARNING  pytest_result_log:plugin.py:122 ------------Start: unit_tests/test_add.py::TestAdd::test_ddt[3-3-6]-------------
+WARNING  pytest_result_log:plugin.py:128 -------------End: unit_tests/test_add.py::TestAdd::test_ddt[3-3-6]--------------

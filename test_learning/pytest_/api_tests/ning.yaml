@@ -1,0 +1,22 @@
+# this is my first yaml
+
+integer:
+  - 1
+  - -1
+  - 1.1
+
+string:
+  - '123'
+  - "1aefffef"
+  - asdwaqwsdw # 可以作为字符串
+
+空值: null # JSON 写法
+
+
+list: [ 1,2,3 ]
+
+dict: {
+  "a": 1,
+  "b": 2,
+  "c": 3
+}

@@ -50,7 +50,7 @@ file.read() 不会自动分行，它只是把所有内容作为一个整体字�
 
 file.readlines() → 返回每一行组成的列表
 """
-buf = f.read()
+buf = f.read()   # 返回的是一个字符串
 print(buf)  # buf 就是拿到了文件的内容
 
 #3.关闭文件
@@ -59,7 +59,7 @@ f.close()
 
 #--------------------------------------------------------------
 """
-题目：Hello world! This is a test. This test is simple. Hello again!
+题目：Hello world! This is a unit_tests. This unit_tests is simple. Hello again!
 Most frequent word: this
 Count: 2
 说明：忽略大小写和标点，this 和 This 视为同一个词
