@@ -1,0 +1,23 @@
+name: Hello World Workflow
+
+on:    #在什么情况下开启 我们的这个action
+  push:   
+    branches: [main]  # 每次 push 到 main 分支时触发， 如果不写就是任何分支都触发
+    
+  workflow_dispatch:   # 手动触发
+
+  pull_request:    # 创建或者更新pr触发
+  
+  
+jobs:   # 接下来的工作们 
+  say-hello:  # 定义一个 job的名字，必须定义
+    runs-on: ubuntu-latest  # GitHub 会启动一台 Ubuntu 云主机      runs-on: self-hosted	用你自己搭的机器来执行任务	比如树莓派、本地电脑、公司服务器
+
+    steps:   #  steps 就是“这个 Job 要做的每一步命令”
+    
+      - name: Checkout code  # 是 这一步的显示名字（给人看的）  写什么它就显示什么，不影响实际功能，只是 GitHub Actions 网页里显示这个名字而已。
+        uses: actions/checkout@v4  #  actions/checkout@v4 是 GitHub 官方封装的一个“插件”，作用是：帮你自动把仓库代码 clone 到 runner 的硬盘上， 调用别人封装好的 Action
+
+
+      - name: Say Hello
+        run: echo "👋 Hello from GitHub Actions!"  # run: 示例：直接写 shell 命令  这就像你在终端里打的命令，GitHub 会直接执行它。
