@@ -14,7 +14,8 @@ if __name__ == "__main__":
     pytest.main(["-vs", "--alluredir=temps"]) #   [] as the parameter
 
     # use allure to generate HTML report， need jdk to run
-    os.system(r"C:\Users\NingNie\Downloads\allure-2.34.0\allure-2.34.0\bin\allure.bat generate -o report -c temps") # allure generate -o report  -c temps
+    os.system("/home/linuxbrew/.linuxbrew/bin/allure generate -o report -c temps")
+
 
 
 
