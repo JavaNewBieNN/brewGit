@@ -63,6 +63,6 @@ jobs:
         run: |
           source .venv/bin/activate
           echo "Starting tests"
-          python run.py
+          python /home/bms/brewGit/test_learning/pytest_/run.py
           echo "tests done!"
 
