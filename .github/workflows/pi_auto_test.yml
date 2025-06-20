@@ -1,0 +1,62 @@
+name: Pi Auto Test
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  pi-runner-job:
+    runs-on: self-hosted
+
+    steps:
+      - name: Test if runner works
+        run: echo "✅ Runner is working!"
+
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Python, pip if needed
+        run: |
+          which python3 || sudo apt update && sudo apt install -y python3 python3-pip    # if front cli failed than execute the next
+
+      - name: Install JDK
+        run: |
+          which java || sudo apt install -y openjdk-17-jdk
+
+      - name: Ensure curl is installed
+        run: |
+          which curl || (sudo apt update && sudo apt install curl -y)
+
+      - name: Install Homebrew (if not exists)
+        run: |
+          which brew || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+      - name: Install Allure
+        run: |
+          which allure || brew install allure
+
+      - name: Setup virtualenv & install requirements
+        run: |
+          python3 -m venv .venv
+          source .venv/bin/activate
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Install success
+        run: |
+          echo "all installments are good!"
+
+
+      - name: Send test report email
+        run: |
+          source .venv/bin/activate
+          echo "🚀 Starting tests"
+          python run.py
+          echo "tests done!"
+

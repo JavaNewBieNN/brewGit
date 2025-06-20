@@ -1,2 +1,0 @@
-WARNING  pytest_result_log:plugin.py:122 -------------Start: api_tests/test_novele_web.py::test_post_request-------------
-WARNING  pytest_result_log:plugin.py:128 --------------End: api_tests/test_novele_web.py::test_post_request--------------

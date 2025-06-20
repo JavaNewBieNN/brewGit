@@ -1,2 +1,0 @@
-WARNING  pytest_result_log:plugin.py:122 -------------Start: unit_tests/test_logout.py::Testlogout::test_02--------------
-WARNING  pytest_result_log:plugin.py:128 --------------End: unit_tests/test_logout.py::Testlogout::test_02---------------
