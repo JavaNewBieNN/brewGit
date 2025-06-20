@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Test if runner works
-        run: echo "✅ Runner is working!"
+        run: echo "Runner is working!"
 
 
       - name: Checkout code
@@ -33,21 +33,21 @@ jobs:
         run: |
           which curl || (sudo apt update && sudo apt install curl -y)
 
-      - name: Install Homebrew (if not exists)
+      - name: Install Homebrew And Allure(if not exists)   # have to install brew and allure at one run command cause 1 run is i termianl
         run: |
-          which brew || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+          if ! command -v brew &>/dev/null; then
+            echo "Installing Homebrew..."
+            /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+          fi
 
-      - name: Add Homebrew to PATH (for current shell)
-        run: |
-          echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.bashrc
+          # add PATH temporarily ， have effect only on current step
           eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-
-      - name: Install Allure
-        run: |
+          # install allure
           which allure || brew install allure
 
-      - name: Setup virtualenv & install requirements
+
+      - name: Setup virtual environment & install requirements
         run: |
           python3 -m venv .venv
           source .venv/bin/activate
@@ -62,7 +62,7 @@ jobs:
       - name: Send test report email
         run: |
           source .venv/bin/activate
-          echo "🚀 Starting tests"
+          echo "Starting tests"
           python run.py
           echo "tests done!"
 
