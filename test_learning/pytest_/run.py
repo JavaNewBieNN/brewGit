@@ -7,7 +7,7 @@ import pytest
 import os
 import time
 
-from test_learning.pytest_.email_utils import send_test_report_email
+from email_utils import send_test_report_email
 
 r"""
 写信封（发件人、收件人、主题）	Email 头	    EmailMessage().['From'] = ...
