@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Test if runner works
-        run: echo "Runner is working!"
+        run: echo "✅ Runner is working!"
 
 
       - name: Checkout code
@@ -36,16 +36,16 @@ jobs:
       - name: Install Homebrew And Allure(if not exists)   # have to install brew and allure at one run command cause 1 run is i termianl
         run: |
           if ! command -v brew &>/dev/null; then
-            echo "Installing Homebrew..."
+            echo "🔧 Installing Homebrew..."
             /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
           fi
-
+          
           # add PATH temporarily ， have effect only on current step
           eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
+          
           # install allure
           which allure || brew install allure
-
+          
 
       - name: Setup virtual environment & install requirements
         run: |
@@ -54,15 +54,20 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
 
+
       - name: Install success
         run: |
           echo "all installments are good!"
 
 
-      - name: Send test report email
+
+      - name: Run tests and send email
         run: |
-          source .venv/bin/activate
+          cd test_learning/pytest_
+          source ../../.venv/bin/activate
+          pwd
           echo "Starting tests"
-          python /home/bms/brewGit/test_learning/pytest_/run.py
-          echo "tests done!"
+          python run.py
+          echo "Tests and email complete"
+
 

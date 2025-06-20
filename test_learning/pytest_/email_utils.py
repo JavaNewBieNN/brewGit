@@ -59,6 +59,7 @@ def send_test_report_email():
     except FileNotFoundError as e:
         print(f"❌ attachment can't be found：{e.filename}")
         return
+
     except Exception as e:
         print(f"❌ something wrong in reading files：{e}")
         print("email sending failed")
