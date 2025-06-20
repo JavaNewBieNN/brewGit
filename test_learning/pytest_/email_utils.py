@@ -33,7 +33,7 @@ def send_test_report_email():
 
         # set the email content
         msg.set_content(
-            'Greeting from Novele Automatic test, Hello Novele. This is an automated test message, test report attached '
+            'Greeting from Novele Automatic test. This is an automated test message, test report attached '
             'below.')
 
         r"""
