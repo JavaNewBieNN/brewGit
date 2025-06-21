@@ -1,0 +1,2 @@
+WARNING  pytest_result_log:plugin.py:122 -----------Start: unit_tests/test_allure.py::test_get_current_version-----------
+WARNING  pytest_result_log:plugin.py:128 ------------End: unit_tests/test_allure.py::test_get_current_version------------

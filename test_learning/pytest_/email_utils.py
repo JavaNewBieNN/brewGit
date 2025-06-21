@@ -6,7 +6,7 @@ import json
 import \
     smtplib  # smtplib- a module from Python std lib （don't need to install）发送邮件用的（Simple Mail Transfer Protocol） smtplib 是“负责把这封信送出去的邮递员”。
 from email.message import EmailMessage  # 构造邮件内容用的（包括主题、正文、附件等） EmailMessage 是“写邮件的纸和信封”，
-
+from zip_pack import zip_report_folder
 r"""
 写信封（发件人、收件人、主题）	Email 头	    EmailMessage().['From'] = ...
 写正文和附件	                信内容	        msg.set_content(), msg.add_attachment()
@@ -42,10 +42,11 @@ def send_test_report_email():
             maintype='text', subtype='plain' 表示这是纯文本文件。
             filename 是你希望收件人看到的文件名。
         """
+        zip_report_folder()
 
-        with open('logs/pytest.log', 'rb') as log_file, open('report/index.html', 'rb') as html_file:
+        with open('logs/pytest.log', 'rb') as log_file, open('report.zip', 'rb') as zip_file:
             msg.add_attachment(log_file.read(), maintype='text', subtype='plain', filename='pytest.log')
-            msg.add_attachment(html_file.read(), maintype='text', subtype='html', filename='index.html')
+            msg.add_attachment(zip_file.read(), maintype='application', subtype='zip', filename='report.zip')
 
             # 发邮件（用 gmail 为例）
         with smtplib.SMTP_SSL('smtp.gmail.com',
