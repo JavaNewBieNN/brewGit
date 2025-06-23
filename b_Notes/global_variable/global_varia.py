@@ -12,13 +12,13 @@ x = 42  # 模块级全局变量
 config.py
 x = 100
 
-run.py
+generate_allure.py
 from config import x
 
 print(x)  # 输出 100
-x = 200   # 修改的是 run.py 里的 x，不会影响 config.py
+x = 200   # 修改的是 generate_allure.py 里的 x，不会影响 config.py
 
-config.py 中的 x 是那个模块的“全局变量" 在 run.py 中引入后 会被复制一份进来 模块之间的变量不共用作用域，除非你传递、导入
+config.py 中的 x 是那个模块的“全局变量" 在 generate_allure.py 中引入后 会被复制一份进来 模块之间的变量不共用作用域，除非你传递、导入
 
 
 """

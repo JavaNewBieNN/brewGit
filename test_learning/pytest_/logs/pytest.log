@@ -1,33 +1,33 @@
-WARNING  2025-06-20 16:59:06 [pytest_result_log:122] : --------Start: api_tests/test_novele_web.py::test_novele_website_status---------
-INFO     2025-06-20 16:59:06 [pytest_result_log:190] : test status is PASSED (api_tests/test_novele_web.py::test_novele_website_status): 
-WARNING  2025-06-20 16:59:06 [pytest_result_log:128] : ---------End: api_tests/test_novele_web.py::test_novele_website_status----------
-WARNING  2025-06-20 16:59:06 [pytest_result_log:122] : -------------Start: api_tests/test_novele_web.py::test_post_request-------------
-INFO     2025-06-20 16:59:06 [pytest_result_log:190] : test status is PASSED (api_tests/test_novele_web.py::test_post_request): 
-WARNING  2025-06-20 16:59:06 [pytest_result_log:128] : --------------End: api_tests/test_novele_web.py::test_post_request--------------
-WARNING  2025-06-20 16:59:07 [pytest_result_log:122] : ------------------Start: unit_tests/test_add.py::test_success-------------------
-INFO     2025-06-20 16:59:07 [pytest_result_log:190] : test status is PASSED (unit_tests/test_add.py::test_success): 
-WARNING  2025-06-20 16:59:07 [pytest_result_log:128] : -------------------End: unit_tests/test_add.py::test_success--------------------
-WARNING  2025-06-20 16:59:07 [pytest_result_log:122] : ------------------Start: unit_tests/test_add.py::test_failure-------------------
-WARNING  2025-06-20 16:59:07 [pytest_result_log:190] : test status is XFAIL (unit_tests/test_add.py::test_failure): AssertionError
-INFO     2025-06-20 16:59:07 [pytest_result_log:194] : unit_tests/test_add.py::test_failure -> @pytest.mark.xfail  # func, expected to be failed，xfailed
+WARNING  2025-06-20 17:28:02 [pytest_result_log:122] : --------Start: api_tests/test_novele_web.py::test_novele_website_status---------
+INFO     2025-06-20 17:28:03 [pytest_result_log:190] : test status is PASSED (api_tests/test_novele_web.py::test_novele_website_status): 
+WARNING  2025-06-20 17:28:03 [pytest_result_log:128] : ---------End: api_tests/test_novele_web.py::test_novele_website_status----------
+WARNING  2025-06-20 17:28:03 [pytest_result_log:122] : -------------Start: api_tests/test_novele_web.py::test_post_request-------------
+INFO     2025-06-20 17:28:03 [pytest_result_log:190] : test status is PASSED (api_tests/test_novele_web.py::test_post_request): 
+WARNING  2025-06-20 17:28:03 [pytest_result_log:128] : --------------End: api_tests/test_novele_web.py::test_post_request--------------
+WARNING  2025-06-20 17:28:03 [pytest_result_log:122] : ------------------Start: unit_tests/test_add.py::test_success-------------------
+INFO     2025-06-20 17:28:03 [pytest_result_log:190] : test status is PASSED (unit_tests/test_add.py::test_success): 
+WARNING  2025-06-20 17:28:03 [pytest_result_log:128] : -------------------End: unit_tests/test_add.py::test_success--------------------
+WARNING  2025-06-20 17:28:03 [pytest_result_log:122] : ------------------Start: unit_tests/test_add.py::test_failure-------------------
+WARNING  2025-06-20 17:28:03 [pytest_result_log:190] : test status is XFAIL (unit_tests/test_add.py::test_failure): AssertionError
+INFO     2025-06-20 17:28:03 [pytest_result_log:194] : unit_tests/test_add.py::test_failure -> @pytest.mark.xfail  # func, expected to be failed，xfailed
     def test_failure():
 >       assert 1 == 2
 E       assert 1 == 2
 
 unit_tests/test_add.py:26: AssertionError
-WARNING  2025-06-20 16:59:07 [pytest_result_log:128] : -------------------End: unit_tests/test_add.py::test_failure--------------------
-WARNING  2025-06-20 16:59:07 [pytest_result_log:190] : test status is SKIPPED (unit_tests/test_add.py::TestAdd::test_int): Skipped: unconditional skip
-INFO     2025-06-20 16:59:07 [pytest_result_log:194] : unit_tests/test_add.py::TestAdd::test_int -> ('/home/bms/brewGit/test_learning/pytest_/unit_tests/test_add.py', 31, 'Skipped: unconditional skip')
-WARNING  2025-06-20 16:59:07 [pytest_result_log:128] : -----------------End: unit_tests/test_add.py::TestAdd::test_int-----------------
-WARNING  2025-06-20 16:59:07 [pytest_result_log:122] : ----------------Start: unit_tests/test_add.py::TestAdd::test_str----------------
-INFO     2025-06-20 16:59:07 [pytest_result_log:190] : test status is PASSED (unit_tests/test_add.py::TestAdd::test_str): 
-WARNING  2025-06-20 16:59:07 [pytest_result_log:128] : -----------------End: unit_tests/test_add.py::TestAdd::test_str-----------------
-WARNING  2025-06-20 16:59:07 [pytest_result_log:122] : ---------------Start: unit_tests/test_add.py::TestAdd::test_list----------------
-WARNING  2025-06-20 16:59:07 [pytest_result_log:190] : test status is XPASS (unit_tests/test_add.py::TestAdd::test_list): 
-WARNING  2025-06-20 16:59:07 [pytest_result_log:128] : ----------------End: unit_tests/test_add.py::TestAdd::test_list-----------------
-WARNING  2025-06-20 16:59:07 [pytest_result_log:122] : ---------------Start: unit_tests/test_add.py::TestAdd::test_list1---------------
-WARNING  2025-06-20 16:59:07 [pytest_result_log:190] : test status is XFAIL (unit_tests/test_add.py::TestAdd::test_list1): AssertionError
-INFO     2025-06-20 16:59:07 [pytest_result_log:194] : unit_tests/test_add.py::TestAdd::test_list1 -> self = <test_add.TestAdd object at 0x7fff16efe710>
+WARNING  2025-06-20 17:28:03 [pytest_result_log:128] : -------------------End: unit_tests/test_add.py::test_failure--------------------
+WARNING  2025-06-20 17:28:03 [pytest_result_log:190] : test status is SKIPPED (unit_tests/test_add.py::TestAdd::test_int): Skipped: unconditional skip
+INFO     2025-06-20 17:28:03 [pytest_result_log:194] : unit_tests/test_add.py::TestAdd::test_int -> ('/home/bms/brewGit/test_learning/pytest_/unit_tests/test_add.py', 31, 'Skipped: unconditional skip')
+WARNING  2025-06-20 17:28:03 [pytest_result_log:128] : -----------------End: unit_tests/test_add.py::TestAdd::test_int-----------------
+WARNING  2025-06-20 17:28:03 [pytest_result_log:122] : ----------------Start: unit_tests/test_add.py::TestAdd::test_str----------------
+INFO     2025-06-20 17:28:03 [pytest_result_log:190] : test status is PASSED (unit_tests/test_add.py::TestAdd::test_str): 
+WARNING  2025-06-20 17:28:03 [pytest_result_log:128] : -----------------End: unit_tests/test_add.py::TestAdd::test_str-----------------
+WARNING  2025-06-20 17:28:03 [pytest_result_log:122] : ---------------Start: unit_tests/test_add.py::TestAdd::test_list----------------
+WARNING  2025-06-20 17:28:03 [pytest_result_log:190] : test status is XPASS (unit_tests/test_add.py::TestAdd::test_list): 
+WARNING  2025-06-20 17:28:03 [pytest_result_log:128] : ----------------End: unit_tests/test_add.py::TestAdd::test_list-----------------
+WARNING  2025-06-20 17:28:03 [pytest_result_log:122] : ---------------Start: unit_tests/test_add.py::TestAdd::test_list1---------------
+WARNING  2025-06-20 17:28:03 [pytest_result_log:190] : test status is XFAIL (unit_tests/test_add.py::TestAdd::test_list1): AssertionError
+INFO     2025-06-20 17:28:03 [pytest_result_log:194] : unit_tests/test_add.py::TestAdd::test_list1 -> self = <test_add.TestAdd object at 0x7ffebf4597d0>
 
     @pytest.mark.xfail  # expected to be failed, and actual failed, xfailed
     @pytest.mark.api
@@ -46,19 +46,19 @@ E
 E         ...Full output truncated (4 lines hidden), use '-vv' to show
 
 unit_tests/test_add.py:53: AssertionError
-WARNING  2025-06-20 16:59:07 [pytest_result_log:128] : ----------------End: unit_tests/test_add.py::TestAdd::test_list1----------------
-WARNING  2025-06-20 16:59:07 [pytest_result_log:122] : ------------Start: unit_tests/test_add.py::TestAdd::test_ddt[1-1-2]-------------
-INFO     2025-06-20 16:59:07 [pytest_result_log:190] : test status is PASSED (unit_tests/test_add.py::TestAdd::test_ddt[1-1-2]): 
-WARNING  2025-06-20 16:59:07 [pytest_result_log:128] : -------------End: unit_tests/test_add.py::TestAdd::test_ddt[1-1-2]--------------
-WARNING  2025-06-20 16:59:07 [pytest_result_log:122] : ------------Start: unit_tests/test_add.py::TestAdd::test_ddt[2-3-5]-------------
-INFO     2025-06-20 16:59:07 [pytest_result_log:190] : test status is PASSED (unit_tests/test_add.py::TestAdd::test_ddt[2-3-5]): 
-WARNING  2025-06-20 16:59:07 [pytest_result_log:128] : -------------End: unit_tests/test_add.py::TestAdd::test_ddt[2-3-5]--------------
-WARNING  2025-06-20 16:59:07 [pytest_result_log:122] : ------------Start: unit_tests/test_add.py::TestAdd::test_ddt[3-3-6]-------------
-INFO     2025-06-20 16:59:07 [pytest_result_log:190] : test status is PASSED (unit_tests/test_add.py::TestAdd::test_ddt[3-3-6]): 
-WARNING  2025-06-20 16:59:07 [pytest_result_log:128] : -------------End: unit_tests/test_add.py::TestAdd::test_ddt[3-3-6]--------------
-WARNING  2025-06-20 16:59:07 [pytest_result_log:122] : ------------Start: unit_tests/test_add.py::TestAdd::test_ddt[4-4-7]-------------
-ERROR    2025-06-20 16:59:07 [pytest_result_log:190] : test status is FAILED (unit_tests/test_add.py::TestAdd::test_ddt[4-4-7]): AssertionError
-INFO     2025-06-20 16:59:07 [pytest_result_log:194] : unit_tests/test_add.py::TestAdd::test_ddt[4-4-7] -> self = <test_add.TestAdd object at 0x7fff16f083d0>, a = '4', b = '4', c = '7'
+WARNING  2025-06-20 17:28:03 [pytest_result_log:128] : ----------------End: unit_tests/test_add.py::TestAdd::test_list1----------------
+WARNING  2025-06-20 17:28:03 [pytest_result_log:122] : ------------Start: unit_tests/test_add.py::TestAdd::test_ddt[1-1-2]-------------
+INFO     2025-06-20 17:28:03 [pytest_result_log:190] : test status is PASSED (unit_tests/test_add.py::TestAdd::test_ddt[1-1-2]): 
+WARNING  2025-06-20 17:28:03 [pytest_result_log:128] : -------------End: unit_tests/test_add.py::TestAdd::test_ddt[1-1-2]--------------
+WARNING  2025-06-20 17:28:03 [pytest_result_log:122] : ------------Start: unit_tests/test_add.py::TestAdd::test_ddt[2-3-5]-------------
+INFO     2025-06-20 17:28:03 [pytest_result_log:190] : test status is PASSED (unit_tests/test_add.py::TestAdd::test_ddt[2-3-5]): 
+WARNING  2025-06-20 17:28:03 [pytest_result_log:128] : -------------End: unit_tests/test_add.py::TestAdd::test_ddt[2-3-5]--------------
+WARNING  2025-06-20 17:28:03 [pytest_result_log:122] : ------------Start: unit_tests/test_add.py::TestAdd::test_ddt[3-3-6]-------------
+INFO     2025-06-20 17:28:03 [pytest_result_log:190] : test status is PASSED (unit_tests/test_add.py::TestAdd::test_ddt[3-3-6]): 
+WARNING  2025-06-20 17:28:03 [pytest_result_log:128] : -------------End: unit_tests/test_add.py::TestAdd::test_ddt[3-3-6]--------------
+WARNING  2025-06-20 17:28:03 [pytest_result_log:122] : ------------Start: unit_tests/test_add.py::TestAdd::test_ddt[4-4-7]-------------
+ERROR    2025-06-20 17:28:03 [pytest_result_log:190] : test status is FAILED (unit_tests/test_add.py::TestAdd::test_ddt[4-4-7]): AssertionError
+INFO     2025-06-20 17:28:03 [pytest_result_log:194] : unit_tests/test_add.py::TestAdd::test_ddt[4-4-7] -> self = <test_add.TestAdd object at 0x7ffebf45b990>, a = '4', b = '4', c = '7'
 
     @pytest.mark.ddt
     @pytest.mark.parametrize(
@@ -73,13 +73,13 @@ E       assert 8 == 7
 E        +  where 7 = int('7')
 
 unit_tests/test_add.py:78: AssertionError
-WARNING  2025-06-20 16:59:07 [pytest_result_log:128] : -------------End: unit_tests/test_add.py::TestAdd::test_ddt[4-4-7]--------------
-WARNING  2025-06-20 16:59:07 [pytest_result_log:122] : --------------Start: unit_tests/test_allure.py::test_charge_power---------------
-INFO     2025-06-20 16:59:07 [pytest_result_log:190] : test status is PASSED (unit_tests/test_allure.py::test_charge_power): 
-WARNING  2025-06-20 16:59:07 [pytest_result_log:128] : ---------------End: unit_tests/test_allure.py::test_charge_power----------------
-WARNING  2025-06-20 16:59:07 [pytest_result_log:122] : -------------Start: unit_tests/test_allure.py::test_discharge_power-------------
-WARNING  2025-06-20 16:59:07 [pytest_result_log:190] : test status is XFAIL (unit_tests/test_allure.py::test_discharge_power): AssertionError
-INFO     2025-06-20 16:59:07 [pytest_result_log:194] : unit_tests/test_allure.py::test_discharge_power -> @allure.epic("1.iot-bms, epic level")
+WARNING  2025-06-20 17:28:03 [pytest_result_log:128] : -------------End: unit_tests/test_add.py::TestAdd::test_ddt[4-4-7]--------------
+WARNING  2025-06-20 17:28:03 [pytest_result_log:122] : --------------Start: unit_tests/test_allure.py::test_charge_power---------------
+INFO     2025-06-20 17:28:03 [pytest_result_log:190] : test status is PASSED (unit_tests/test_allure.py::test_charge_power): 
+WARNING  2025-06-20 17:28:03 [pytest_result_log:128] : ---------------End: unit_tests/test_allure.py::test_charge_power----------------
+WARNING  2025-06-20 17:28:03 [pytest_result_log:122] : -------------Start: unit_tests/test_allure.py::test_discharge_power-------------
+WARNING  2025-06-20 17:28:03 [pytest_result_log:190] : test status is XFAIL (unit_tests/test_allure.py::test_discharge_power): AssertionError
+INFO     2025-06-20 17:28:03 [pytest_result_log:194] : unit_tests/test_allure.py::test_discharge_power -> @allure.epic("1.iot-bms, epic level")
     @allure.feature("2.controller level, feature level")
     @allure.story("3.Peak-shaving, story level")
     @allure.title("4.discharge_power, title/ut level")
@@ -92,26 +92,26 @@ INFO     2025-06-20 16:59:07 [pytest_result_log:194] : unit_tests/test_allure.py
 E       assert 1 == 2
 
 unit_tests/test_allure.py:24: AssertionError
-WARNING  2025-06-20 16:59:07 [pytest_result_log:128] : --------------End: unit_tests/test_allure.py::test_discharge_power--------------
-WARNING  2025-06-20 16:59:07 [pytest_result_log:122] : ------------------Start: unit_tests/test_allure.py::test_state------------------
-INFO     2025-06-20 16:59:07 [pytest_result_log:190] : test status is PASSED (unit_tests/test_allure.py::test_state): 
-WARNING  2025-06-20 16:59:07 [pytest_result_log:128] : -------------------End: unit_tests/test_allure.py::test_state-------------------
-WARNING  2025-06-20 16:59:07 [pytest_result_log:122] : -----------Start: unit_tests/test_allure.py::test_get_current_version-----------
-INFO     2025-06-20 16:59:07 [pytest_result_log:190] : test status is PASSED (unit_tests/test_allure.py::test_get_current_version): 
-WARNING  2025-06-20 16:59:07 [pytest_result_log:128] : ------------End: unit_tests/test_allure.py::test_get_current_version------------
-WARNING  2025-06-20 16:59:07 [pytest_result_log:122] : --------------Start: unit_tests/test_login.py::TestLogin::test_01---------------
-INFO     2025-06-20 16:59:07 [pytest_result_log:190] : test status is PASSED (unit_tests/test_login.py::TestLogin::test_01): 
-WARNING  2025-06-20 16:59:07 [pytest_result_log:128] : ---------------End: unit_tests/test_login.py::TestLogin::test_01----------------
-WARNING  2025-06-20 16:59:07 [pytest_result_log:122] : -------------Start: unit_tests/test_logout.py::Testlogout::test_02--------------
-INFO     2025-06-20 16:59:07 [pytest_result_log:190] : test status is PASSED (unit_tests/test_logout.py::Testlogout::test_02): 
-WARNING  2025-06-20 16:59:07 [pytest_result_log:128] : --------------End: unit_tests/test_logout.py::Testlogout::test_02---------------
-WARNING  2025-06-20 16:59:07 [pytest_result_log:122] : ------------------Start: unit_tests/test_rerun.py::test_rerun-------------------
-ERROR    2025-06-20 16:59:07 [pytest_result_log:190] : test status is FAILED (unit_tests/test_rerun.py::test_rerun): AssertionError
-INFO     2025-06-20 16:59:07 [pytest_result_log:194] : unit_tests/test_rerun.py::test_rerun -> @pytest.mark.ut
+WARNING  2025-06-20 17:28:03 [pytest_result_log:128] : --------------End: unit_tests/test_allure.py::test_discharge_power--------------
+WARNING  2025-06-20 17:28:03 [pytest_result_log:122] : ------------------Start: unit_tests/test_allure.py::test_state------------------
+INFO     2025-06-20 17:28:03 [pytest_result_log:190] : test status is PASSED (unit_tests/test_allure.py::test_state): 
+WARNING  2025-06-20 17:28:03 [pytest_result_log:128] : -------------------End: unit_tests/test_allure.py::test_state-------------------
+WARNING  2025-06-20 17:28:03 [pytest_result_log:122] : -----------Start: unit_tests/test_allure.py::test_get_current_version-----------
+INFO     2025-06-20 17:28:03 [pytest_result_log:190] : test status is PASSED (unit_tests/test_allure.py::test_get_current_version): 
+WARNING  2025-06-20 17:28:03 [pytest_result_log:128] : ------------End: unit_tests/test_allure.py::test_get_current_version------------
+WARNING  2025-06-20 17:28:03 [pytest_result_log:122] : --------------Start: unit_tests/test_login.py::TestLogin::test_01---------------
+INFO     2025-06-20 17:28:03 [pytest_result_log:190] : test status is PASSED (unit_tests/test_login.py::TestLogin::test_01): 
+WARNING  2025-06-20 17:28:03 [pytest_result_log:128] : ---------------End: unit_tests/test_login.py::TestLogin::test_01----------------
+WARNING  2025-06-20 17:28:03 [pytest_result_log:122] : -------------Start: unit_tests/test_logout.py::Testlogout::test_02--------------
+INFO     2025-06-20 17:28:03 [pytest_result_log:190] : test status is PASSED (unit_tests/test_logout.py::Testlogout::test_02): 
+WARNING  2025-06-20 17:28:03 [pytest_result_log:128] : --------------End: unit_tests/test_logout.py::Testlogout::test_02---------------
+WARNING  2025-06-20 17:28:03 [pytest_result_log:122] : ------------------Start: unit_tests/test_rerun.py::test_rerun-------------------
+ERROR    2025-06-20 17:28:03 [pytest_result_log:190] : test status is FAILED (unit_tests/test_rerun.py::test_rerun): AssertionError
+INFO     2025-06-20 17:28:03 [pytest_result_log:194] : unit_tests/test_rerun.py::test_rerun -> @pytest.mark.ut
     def test_rerun():
         x = random.randint(0, 9)  # 每次都有随机数出现 generate a random int
 >       assert x >= 5
-E       assert 1 >= 5
+E       assert 0 >= 5
 
 unit_tests/test_rerun.py:8: AssertionError
-WARNING  2025-06-20 16:59:07 [pytest_result_log:128] : -------------------End: unit_tests/test_rerun.py::test_rerun--------------------
+WARNING  2025-06-20 17:28:03 [pytest_result_log:128] : -------------------End: unit_tests/test_rerun.py::test_rerun--------------------

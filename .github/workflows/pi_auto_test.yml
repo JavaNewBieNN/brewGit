@@ -61,13 +61,26 @@ jobs:
 
 
 
-      - name: Run tests and send email
+      - name: generate allure report
         run: |
           cd test_learning/pytest_
           source ../../.venv/bin/activate
           pwd
           echo "Starting tests"
-          python run.py
-          echo "Tests and email complete"
+          python generate_allure.py
+          echo "allure generated"
 
 
+      - name: pack report
+        run: |
+          cd test_learning/pytest_
+          tar -czf report.tar.gz report         # tar linux archive tools
+          echo "pack action successful"                          # -c means creat
+                                                # -z uses gzip .gz
+                                                # -f means output file name is 'report.tar.gz'
+                                                # report is the target folder
+
+      - name: send report
+        run: |
+          python open_and_send_report.py
+          echo "send the report successful"
