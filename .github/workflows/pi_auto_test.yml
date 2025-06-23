@@ -33,10 +33,10 @@ jobs:
         run: |
           which curl || (sudo apt update && sudo apt install curl -y)
 
-      - name: Install Homebrew And Allure(if not exists)   # have to install brew and allure at one run command cause 1 run is i termianl
+      - name: Install Homebrew And Allure(if not exists)   # have to install brew and allure at one run command cause 1 run is i terminal
         run: |
           if ! command -v brew &>/dev/null; then
-            echo "🔧 Installing Homebrew..."
+            echo "Installing Homebrew..."
             /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
           fi
           
@@ -65,7 +65,6 @@ jobs:
         run: |
           cd test_learning/pytest_
           source ../../.venv/bin/activate
-          pwd
           echo "Starting tests"
           python generate_allure.py
           echo "allure generated"
@@ -75,12 +74,14 @@ jobs:
         run: |
           cd test_learning/pytest_
           tar -czf report.tar.gz report         # tar linux archive tools
-          echo "pack action successful"                          # -c means creat
+          echo "pack action successful"         # -c means creat
                                                 # -z uses gzip .gz
                                                 # -f means output file name is 'report.tar.gz'
                                                 # report is the target folder
 
       - name: send report
-        run: |
+        run: |                                  # /home/<username>/actions-runner/_work/<repo-name>/<repo-name>
+          cd test_learning/pytest_
+          source ../../.venv/bin/activate
           python open_and_send_report.py
           echo "send the report successful"
